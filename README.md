@@ -35,7 +35,7 @@ Data Cleaning
 
 To ensure high-quality data for model training, the following data cleaning steps were performed:
 
-    **Handling Missing Values**: Imputed missing data using appropriate techniques (e.g., mean, median, or mode imputation).
+    Handling Missing Values: Imputed missing data using appropriate techniques (e.g., mean, median, or mode imputation).
     Removing Duplicates: Identified and removed duplicate entries.
     Outlier Detection: Analyzed distributions and handled outliers using statistical methods to reduce noise.
     Feature Encoding: Categorical features were encoded using one-hot encoding or label encoding where applicable.
@@ -50,7 +50,7 @@ Data visualization played a key role in understanding data distribution and rela
     Histograms and Bar Charts: Showed the frequency distribution of categorical features.
     Scatter Plots: Illustrated relationships between features such as Mileage, Engine size, and Price.
 
-Machine Learning Models
+Machine Learning Models:
 
 Multiple machine learning models were implemented and evaluated:
 
@@ -60,45 +60,39 @@ Multiple machine learning models were implemented and evaluated:
     Gradient Boosting Regressor
     XGBoost Regressor
 
-Hyperparameter Tuning
+Hyperparameter Tuning:
 
-To optimize model performance, hyperparameter tuning was carried out using techniques like GridSearchCV or RandomizedSearchCV:
+To optimize model performance, hyperparameter tuning was carried out using techniques like GridSearchCV
 
-    Random Forest Regressor: Tuned n_estimators, max_depth, and min_samples_split.
-    Gradient Boosting: Tuned learning rate, n_estimators, and max_depth.
-    XGBoost: Tuned learning rate, n_estimators, max_depth, and subsample.
-
-Model Evaluation
-
-Each model was evaluated based on metrics such as:
-
-    R-squared Score
-    Mean Absolute Error (MAE)
-    Mean Squared Error (MSE)
-    Root Mean Squared Error (RMSE)
+Model Evaluation:
 
 Model Performance Summary
+
 Model	R-squared Accuracy
+
 Linear Regression	92%
 Decision Tree Regressor	83%
 Random Forest Regressor	91%
 Gradient Boosting Regressor	90%
 XGBoost Regressor	94%
 
-Results
+Results: 
+Though XGBoost shows greater accuracy,I opted for Linear regression based on the following criteria,
+
 1. Simplicity and Interpretability
 2. Computational Efficiency
 3. Generalizability
 4. Maintenance and Scalability
 5. Client Priorities
 6. Robustness to Outliers
-     For 
+    
 
 Conclusion
 
-The project successfully built a robust pipeline for predicting the price of used cars, with the XGBoost Regressor showing the best results after hyperparameter tuning.
-Future Work
+The project successfully built a robust pipeline for predicting the price of used cars, with the LINEAR REGRESSION MODEL showing the best results after hyperparameter tuning.Deployed the model using Streamlit for user-friendly interaction.
+
+Future Work:
 
     Integrate additional features like car condition and service history.
-    Deploy the model using Streamlit for user-friendly interaction.
+    
     Explore deep learning techniques for further improvements.
